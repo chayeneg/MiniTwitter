@@ -2,28 +2,31 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+
+<script text="text/javasript">
+function Cadastro(){
+  location.href="Cadastro.html"
+}
+function Login(){
+  location.href="Login.html"
+}
+function Timeline(){
+  location.href="Timeline.html"
+}
+</script>
+
 <title>Mini-Twitter</title>
 </head>
 
 <body>
-
-  <script type="text/javascript">
-
-  function Cadastro(){
-    location.href="Cadastro.html"
-  }
-  function Login() {
-    location.href="Login.html"
-  }
-
-  </script>
-
 <fieldset>
   <legend><h1> Página Inicial </h1></legend>
   <div align="center">
   <input type="button" value="Login" onclick="Login()">
   <h2>ou</h2>
   <input type="button" value="Cadastrar" onclick="Cadastro()">
+<h2>ou</h2>
+  <input type="button" value="Timeline" onclick="Timeline()">
 </div>
 
 </body>
