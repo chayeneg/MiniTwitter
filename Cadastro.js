@@ -1,4 +1,7 @@
-function contaNome(){
-  var totalchar = 50 - document.getElementsByName('nomeCompleto').value.lenght;
-  document.getElementsByName('qntnome').innerHTML="Caracteres Restantes: " + totalchar;
+function contaCharNome(){
+  var totalchar = 50 - document.getElementById("nomeCompleto").value.length;
+  if (totalchar < 0){
+    totalchar--;
+  }
+  document.getElementById("qntCharNome").innerHTML="Caracteres restantes:"+ totalchar + "/50";
 }
