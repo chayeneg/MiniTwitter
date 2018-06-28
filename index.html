@@ -6,15 +6,25 @@
 </head>
 
 <body>
+
+  <script type="text/javascript">
+
+  function Cadastro(){
+    location.href="Cadastro.html"
+  }
+  function Login() {
+    location.href="Login.html"
+  }
+
+  </script>
+
 <fieldset>
   <legend><h1> Página Inicial </h1></legend>
-
-  <h2>Login</h2>
-  <button type="submit">Fazer Login</button>
-  <h2>Cadastre-se</h2>
-  <button type="submit">Cadastrar</button>
-
-
+  <div align="center">
+  <input type="button" value="Login" onclick="Login()">
+  <h2>ou</h2>
+  <input type="button" value="Cadastrar" onclick="Cadastro()">
+</div>
 
 </body>
 
