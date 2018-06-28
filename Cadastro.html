@@ -4,23 +4,23 @@
 <meta charset="UTF-8">
 <title>Mini-Twitter</title>
 </head>
-
 <body>
   <fieldset>
     <legend> Crie sua conta </legend>
   <form>
     <br>Nome Completo:<br>
-    <input type="text" name="nomeCompleto"><br>
+    <input type="text" maxlength="50" name="nomeCompleto" onkeyup="contaNome(50)"><br>
+    <p name="qntnome">Caracteres Restantes: 140 </p>
     Email:<br>
-    <input type="text" name="email"><br>
+    <input type="email" name="email"><br>
     Nome de Usuário:<br>
-    <input type="text" name="username"><br>
+    <input type="text" maxlength="25" name="username"><br>
     Data de Nascimento:<br>
     <input type="date" name="dataNasc"><br>
     Senha:<br>
-    <input type="password" name="senha"><br>
+    <input type="password" maxlength="20" name="senha"><br>
     Confirmar Senha:<br>
-    <input type="password" name="confirmarSenha"><br>
+    <input type="password" maxlength="20" name="confirmarSenha"><br>
 
     Gênero:<br>
     <select name="genero">
