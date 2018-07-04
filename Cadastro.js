@@ -5,3 +5,11 @@ function contaCharNome(){
   }
   document.getElementById("qntCharNome").innerHTML="Caracteres restantes:"+ totalchar + "/50";
 }
+
+function contaCharUsername(){
+  var totalchar = 25 - document.getElementById("user").value.length;
+  if (totalchar < 0){
+    totalchar--;
+  }
+  document.getElementById("qntCharUsername").innerHTML="Caracteres restantes:"+ totalchar + "/25";
+}
