@@ -10,20 +10,25 @@
     <legend><h1>Crie sua conta</h1></legend>
   <form>
     <br>Nome Completo:<br>
-    <input type="text" maxlength="50" id="nomeCompleto" onkeyup="contaCharNome()"><br>
-    <span id = "qntCharNome"> Caracteres restantes: 50 /50</span><br>
-    Email:<br>
-    <input type="email" name="email" id="email" onkeyup="contaCharEmail()"><br>
-    <span id = "qntCharEmail"> Caracteres restantes: 25 /25</span><br>
+    <input type="text" maxlength="50" id="nomeCompleto" onkeyup="contaCharNome()">
+    <span id = "qntCharNome"> 0 /50</span><br><br>
+
     Nome de Usuário:<br>
-    <input type="text" maxlength="25" id="user" onkeyup="contaCharUsername()"><br>
-    <span id = "qntCharUsername"> Caracteres restantes: 25 /25</span><br>
-    Data de Nascimento:<br>
-    <input type="date" name="dataNasc"><br>
+    <input type="text" maxlength="25" id="user" onkeyup="contaCharUsername()">
+    <span id = "qntCharUsername"> 0 /25</span><br><br>
+
+    Email:<br>
+    <input type="email" maxlength="40" name="email" id="email" onkeyup="contaCharEmail()">
+    <span id = "qntCharEmail"> 0 /60</span><br><br>
+
     Senha:<br>
-    <input type="password" maxlength="20" name="senha"><br>
+    <input type="password" maxlength="20" name="senha"><br><br>
+
     Confirmar Senha:<br>
-    <input type="password" maxlength="20" name="confirmarSenha"><br>
+    <input type="password" maxlength="20" name="confirmarSenha"><br><br>
+
+    Data de Nascimento:<br>
+    <input type="date" name="dataNasc"><br><br>
 
     Gênero:<br>
     <select name="genero">
@@ -31,7 +36,7 @@
       <option value="masculino">Masculino</option>
       <option value="feminino">Feminino</option>
       <option value="outro">Outro</option>
-    </select><br>
+    </select><br><br>
 
     Estado:<br>
     <select name="estado">
