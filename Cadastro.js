@@ -13,3 +13,11 @@ function contaCharUsername(){
   }
   document.getElementById("qntCharUsername").innerHTML="Caracteres restantes:"+ totalchar + "/25";
 }
+
+function contaCharEmail(){
+  var totalchar = 25 - document.getElementById("email").value.length;
+  if (totalchar < 0){
+    totalchar--;
+  }
+  document.getElementById("qntCharEmail").innerHTML="Caracteres restantes:"+ totalchar + "/25";
+}
