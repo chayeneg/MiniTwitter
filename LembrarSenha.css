@@ -1,6 +1,6 @@
 .caixa {
   width: 300px;
-  height: 430px;
+  height: auto;
   background: #ecfee8;
   border-top-style: solid;
   border-width: 15px;
@@ -13,6 +13,7 @@
   border-color: #f15025;
   text-align: center;
 }
+
 
 .conteudo {
   text-align: center;
@@ -43,21 +44,4 @@ button{
 
 button:hover{
   background-color: #E16036;
-}
-
-h1 {
-  margin-top: 5px;
-}
-
-h2  {
-  margin-left: 47px;
-  text-align: left;
-}
-
-img{
-  margin-top: 15px;
-}
-
-footer {
-  float: inherit;
 }
