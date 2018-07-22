@@ -1,5 +1,5 @@
 .caixa {
-  width: 300px;
+  width: 350px;
   height: auto;
   background: #ecfee8;
   border-top-style: solid;
@@ -11,7 +11,7 @@
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-color: #f15025;
-  text-align: center;
+  text-align:center;
 }
 
 

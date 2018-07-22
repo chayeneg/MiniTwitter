@@ -9,40 +9,37 @@
   </head>
   <body>
     <div class="caixa">
-      <div class="conteudo">
   <legend><h1>Crie sua conta</h1></legend>
-  <form>
+  <div class="conteudo">
+
     <br>Nome Completo:<br>
     <input type="text" maxlength="50" id="nomeCompleto" onkeyup="contaCharNome()">
-    <span id = "qntCharNome"> 0 /50</span><br><br>
+    <span id = "qntCharNome"> 0 /50</span><br>
 
-    Nome de Usuário:<br>
+    <br>Nome de Usuário:<br>
     <input type="text" maxlength="25" id="user" onkeyup="contaCharUsername()">
-    <span id = "qntCharUsername"> 0 /25</span><br><br>
+    <span id = "qntCharUsername"> 0 /25</span><br>
 
-    Email:<br>
+    <br>Email:<br>
     <input type="email" maxlength="40" name="email" id="email" onkeyup="contaCharEmail()">
-    <span id = "qntCharEmail"> 0 /60</span><br><br>
+    <span id = "qntCharEmail"> 0 /60</span><br>
 
-    Senha:<br>
-    <input type="password" maxlength="20" name="senha"><br><br>
+    <br>Senha:<br>
+    <input type="password" maxlength="20" name="senha"><br>
 
-    Confirmar Senha:<br>
-    <input type="password" maxlength="20" name="confirmarSenha"><br><br>
+    <br>Confirmar Senha:<br>
+    <input type="password" maxlength="20" name="confirmarSenha"><br>
 
-    Data de Nascimento:<br>
-    <input type="date" name="dataNasc"><br><br>
+    <br>Data de Nascimento:<input type="date" name="dataNasc"><br>
 
-    Gênero:<br>
-    <select name="genero">
+    <br>Sexo:<select name="genero">
       <option value="selecione">Selecione</option>
       <option value="masculino">Masculino</option>
       <option value="feminino">Feminino</option>
       <option value="outro">Outro</option>
-    </select><br><br>
+    </select><br>
 
-    Estado:<br>
-    <select name="estado">
+    <br>Estado: <select name="estado">
     <option value="ac">Acre</option>
     <option value="al">Alagoas</option>
     <option value="am">Amazonas</option>
@@ -70,12 +67,11 @@
     <option value="se">Sergipe</option>
     <option value="sp">São Paulo</option>
     <option value="to">Tocantins</option>
-  </select><br>
+  </select><br></div><br>
 
+  <button type="button" onclick="CriarConta()"> Criar minha conta </button>
 
-    <br><input type="submit" value = "Enviar"><br>
-  </form>
-</div></div>
+</div>
 </body>
 
 </html>
