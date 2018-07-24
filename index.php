@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 
 <link rel="stylesheet" type="text/css" href="index.css">
-<script src="index.js" ></script>
 
 <title>Mini-Twitter</title>
 </head>
@@ -16,8 +15,7 @@
       <h1> MiniTwitter </h1>
       <h2>Venha contar suas frustrações</h2>
       <h4>Participe hoje do MiniTwitter</h4>
-      <button type="button" onclick="Login()"> Entrar </button>
-      <button type="button" onclick="Cadastro()"> Inscrever-se </button>
+      <a href="cadastro.php">Inscrever-se</a>
     </div>
   </div>
 </body>

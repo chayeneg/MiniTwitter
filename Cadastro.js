@@ -1,4 +1,4 @@
-function contaCharNome(){
+/*function contaCharNome(){
   var totalchar = -1 + document.getElementById("nomeCompleto").value.length;
   if (totalchar < 50){
     totalchar++;
@@ -20,4 +20,4 @@ function contaCharEmail(){
     totalchar++;
   }
   document.getElementById("qntCharEmail").innerHTML= totalchar + " /60";
-}
+}*/
