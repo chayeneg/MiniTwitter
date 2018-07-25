@@ -10,25 +10,24 @@
     <div class="caixa">
       <h1>Crie sua conta</h1>
       <div class="conteudo">
-
         Nome <br>
-        <input type="text" maxlength="50" id="nome" onkeyup="contaCharNome()"><br><br>
+        <input type="text" maxlength="500" name="nome" onkeyup="contaCharNome()"><br><br>
         Nome de usuário <br>
-        <input type="text" maxlength="25" id="usuario" onkeyup="contaCharUsername()"><br><br>
+        <input type="text" maxlength="50" name="usuario" onkeyup="contaCharUsername()"><br><br>
         Email <br>
-        <input type="email" maxlength="40" name="email" id="email" onkeyup="contaCharEmail()"><br><br>
+        <input type="email" maxlength="100" name="email" name="email" onkeyup="contaCharEmail()"><br><br>
         Senha <br>
-        <input type="password" maxlength="20" name="senha"><br><br>
+        <input type="password" maxlength="100" name="senha"><br><br>
         Data de nascimento <br>
-        <input type="datetime" name="data"><br><br>
+        <input type="date" name="data"><br><br>
         Sexo<br>
-        <select>
+        <select name="sexo">
           <option value="masculino">Masculino</option>
           <option value="feminino">feminino</option>
           <option value="outro"></option>
         </select><br><br>
-        Cidade<br>
-        <select>
+        Pais<br>
+        <select name="pais">
           <option value="África do Sul">África do Sul</option>
             <option value="Albânia">Albânia</option>
             <option value="Alemanha">Alemanha</option>
@@ -204,6 +203,9 @@
             <option value="Zâmbia">Zâmbia</option>
             <option value="Zimbábue">Zimbábue</option>
         </select><br><br>
+
+        Site <br>
+        <input type="text" name="site" maxlength="300";><br><br>
 
         <input type="submit" name="cadastrar" value="Criar Cadastro">
 
