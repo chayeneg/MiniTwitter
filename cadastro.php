@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Mini-Twitter</title>
   <script src="Cadastro.js"></script>
-  <link rel="stylesheet" type="text/css" href="Cadastro.css">
+  <link rel="stylesheet" type="text/css" href="cadastro.css">
 
   </head>
   <body>
@@ -13,7 +13,7 @@
       <h1>Crie sua conta</h1>
       <div class="conteudo">
         Nome <br>
-        <input type="text" maxlength="500" name="nome" onkeyup="contaCharNome()"> * <br><br>
+        <input type="text" maxlength="500" name="nome" onkeyup="contaCharNome()"> * <br>
         Nome de usuário <br>
         <input type="text" maxlength="50" name="usuario" onkeyup="contaCharUsername()"> * <br><br>
         Email <br>

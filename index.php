@@ -15,7 +15,7 @@
       <h1> MiniTwitter </h1>
       <h2>Venha contar suas frustrações</h2>
       <h4>Participe hoje do MiniTwitter</h4>
-      <a href="cadastro.php">Inscrever-se</a>
+      <input type="submit" value="Inscrever-se" onclick="location.href='cadastro.php'"></a>
     </div>
   </div>
 </body>

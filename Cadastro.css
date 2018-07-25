@@ -1,6 +1,6 @@
 .caixa {
   width: 350px;
-  height: auto;
+  height: 580px;
   background: #ecfee8;
   border-top-style: solid;
   border-width: 15px;
@@ -14,11 +14,13 @@
   text-align:center;
 }
 
-
-.conteudo {
-  text-align: justify;
+input{
+    padding: 7px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-
 body {
   width: 100vw;
   height: 100vh;

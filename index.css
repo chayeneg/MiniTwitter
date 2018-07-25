@@ -28,7 +28,7 @@ body {
   align-items: center
 }
 
-button{
+input{
     background-color: #f15025;
     border: none;
     color: white;
@@ -41,7 +41,7 @@ button{
     border-radius: 15px;
 }
 
-button:hover{
+input:hover{
   background-color: #E16036;
 }
 
