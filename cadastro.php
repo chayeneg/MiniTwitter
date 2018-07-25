@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Mini-Twitter</title>
   <script src="Cadastro.js"></script>
+  <link rel="stylesheet" type="text/css" href="Cadastro.css">
+
   </head>
   <body>
   <form action="cadastrando.php" method="post">
