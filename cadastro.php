@@ -11,15 +11,15 @@
       <h1>Crie sua conta</h1>
       <div class="conteudo">
         Nome <br>
-        <input type="text" maxlength="500" name="nome" onkeyup="contaCharNome()"><br><br>
+        <input type="text" maxlength="500" name="nome" onkeyup="contaCharNome()"> * <br><br>
         Nome de usuário <br>
-        <input type="text" maxlength="50" name="usuario" onkeyup="contaCharUsername()"><br><br>
+        <input type="text" maxlength="50" name="usuario" onkeyup="contaCharUsername()"> * <br><br>
         Email <br>
-        <input type="email" maxlength="100" name="email" name="email" onkeyup="contaCharEmail()"><br><br>
+        <input type="email" maxlength="100" name="email" name="email" onkeyup="contaCharEmail()"> * <br><br>
         Senha <br>
-        <input type="password" maxlength="100" name="senha"><br><br>
+        <input type="password" maxlength="100" name="senha"> * <br><br>
         Data de nascimento <br>
-        <input type="date" name="data"><br><br>
+        <input type="date" name="data"> * <br><br>
         Sexo<br>
         <select name="sexo">
           <option value="masculino">Masculino</option>
