@@ -3,32 +3,26 @@
   <head>
   <meta charset="UTF-8">
   <title>Mini-Twitter</title>
-  <script src="Cadastro.js"></script>
-  <link rel="stylesheet" type="text/css" href="cadastro.css">
-
+  <link rel="stylesheet" type="text/css" href="cadastro.css?version=12"/>
   </head>
   <body>
   <form action="cadastrando.php" method="post">
     <div class="caixa">
       <h1>Crie sua conta</h1>
-      <div class="conteudo">
-        Nome <br>
-        <input type="text" maxlength="500" name="nome" onkeyup="contaCharNome()"> * <br>
-        Nome de usuário <br>
-        <input type="text" maxlength="50" name="usuario" onkeyup="contaCharUsername()"> * <br><br>
-        Email <br>
-        <input type="email" maxlength="100" name="email" name="email" onkeyup="contaCharEmail()"> * <br><br>
-        Senha <br>
-        <input type="password" maxlength="100" name="senha"> * <br><br>
-        Data de nascimento <br>
-        <input type="date" name="data"> * <br><br>
-        Sexo<br>
+      <div class="formulario">
+
+         Nome <input type="text" maxlength="500" name="nome" onkeyup="contaCharNome()"> * <br><br>
+         Nome de usuário  <input type="text" maxlength="50" name="usuario" onkeyup="contaCharUsername()"> * <br><br>
+         Email  <input type="email" maxlength="100" name="email" name="email" onkeyup="contaCharEmail()"> * <br><br>
+         Senha  <input type="password" maxlength="100" name="senha"> * <br><br>
+         Data de nascimento  <input type="date" name="data"> * <br><br>
+         Sexo
         <select name="sexo">
           <option value="masculino">Masculino</option>
           <option value="feminino">feminino</option>
           <option value="outro"></option>
         </select><br><br>
-        Pais<br>
+         Pais
         <select name="pais">
           <option value="África do Sul">África do Sul</option>
             <option value="Albânia">Albânia</option>
@@ -206,10 +200,9 @@
             <option value="Zimbábue">Zimbábue</option>
         </select><br><br>
 
-        Site <br>
-        <input type="text" name="site" maxlength="300";><br><br>
+         Site <input type="text" name="site" maxlength="300";><br><br>
 
-        <input type="submit" name="cadastrar" value="Criar Cadastro">
+        <input type="submit" name="cadastrar" value="Enviar">
 
       </div>
     </div>
