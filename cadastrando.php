@@ -7,17 +7,6 @@
 
 <body>
 <?php
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $database = "minitwitter";
-  // Create connection
-  $conn = new mysqli($servername, $username, $password, $database);
-
-  // Check connection
-  if ($conn->connect_error) {
-      die("Falha na conexão: " . $conn->connect_error);
-  }
 
   $nome = $_POST['nome'];
   $usuario = $_POST['usuario'];
@@ -34,6 +23,8 @@
   else{
     $sql = "INSERT INTO users (name, username, email, password, birthDate, sex, country, website)
     VALUES ('$nome','$usuario','$email','$senha','$dtNasc','$sexo','$pais','$site')";
+    $execSQL = mysqli
+
 
     if ($conn->query($sql) === TRUE) {
         echo "Cadastro efetuado com sucesso!";
