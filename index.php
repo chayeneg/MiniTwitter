@@ -16,6 +16,8 @@
       <h2>Venha contar suas frustrações</h2>
       <h4>Participe hoje do MiniTwitter</h4>
       <input type="submit" value="Inscrever-se" onclick="location.href='cadastro.php'"></a>
+      <input type="submit" value="Logar-se" onclick="location.href='login.php'"></a>
+
     </div>
   </div>
 </body>

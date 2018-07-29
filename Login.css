@@ -29,7 +29,7 @@ body {
   align-items: center
 }
 
-button{
+input[type="submit"]{
     background-color: #f15025;
     border: none;
     color: white;
