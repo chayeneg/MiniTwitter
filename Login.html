@@ -1,28 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Mini-Twitter</title>
-
-<script src="Login.js" ></script>
-<link rel="stylesheet" type="text/css" href="Login.css">
-
+  <title> Login de Usuário </title>
 </head>
-
 <body>
-    <div class="caixa">
-      <div class="conteudo">
-    <legend><h1> Entrar </h1></legend>
-
-    Usuário<br>
-    <input type="username" name="username"><br>
-    <br>Senha<br>
-    <input type="password" name="senha"><br><br>
-    <button type="button" onclick="Entrar()"> Entrar </button>
-    <button type="button" onclick="EsqueciASenha()"> Esqueci a Senha</button><br>
-</div></div>
-
-
+  <form method="POST" action="Login.php">
+    <label>Usuario:</label><input type="text" name="usuario"><br>
+    <label>Senha:</label><input type="password" name="senha"><br>
+    <input type="submit" value="entrar" name="entrar"><br>
+  </form>
 </body>
-
 </html>

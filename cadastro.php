@@ -13,7 +13,7 @@
       <h1>Crie sua conta</h1>
       <div class="formulario">
 
-        Nome oi chayene
+        Nome
         <input type="text" maxlength="500" name="nome" onkeyup="contaCharNome()"> *
         <br>
         <br> Nome de usuário

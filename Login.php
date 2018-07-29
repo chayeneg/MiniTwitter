@@ -1,33 +1,18 @@
 <?php
-session_start();
+  include_once("conexao.php");
 
+  $login = $_POST['usuario'];
+  $senha = md5($_POST['senha']);
+  $entrar = $_POST['entrar'];
+
+    if (isset($entrar)) {
+
+      $verifica = mysqli_query($conn, "SELECT email FROM users WHERE usuario = '$login' AND senha = '$senha'") or die("erro ao selecionar");
+        if (mysqli_num_rows($verifica)<0){
+          echo"fodac";
+          die();
+        }else{
+          header("Location:timeline.php");
+        }
+    }
 ?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <title> Entrar </title>
-</head>
-<body>
-  <h2> Entre com seu usuário e senha</h2>
-  <?php
-  if(isset($_SESSION['msg'])){
-    echo $_SESSION['msg'];
-    unset ($_SESSION['msg']);
-  }
-  ?>
-  <form method="post" action="valida.php">
-
-
-    <label>Usuário</label>
-    <input type="text" name="username" placeholder="Digite o seu usuário"><br><br>
-
-    <label>Senha</label>
-    <input type="password" name="password" placeholder="Digite a sua senha"><br><br>
-
-    <input type="submit" name="btnLogin" value="Acessar">
-
-  </form>
-</body>
-</html>
