@@ -11,14 +11,14 @@
             $_SESSION['nome'] = $row->nome;
             header("Location: Timeline.php");
          } else {
-            session_start();
+            /*session_start();
             $_SESSION['error'] = "usuário ou senha incorretos";
-            header("Location: login.php");
+            header("Location: login.php");*/
+
+               echo "erro!";
          }
       } else {
-         session_start();
-         $_SESSION['error'] = "usuário ou senha incorretos";
-         header("Location: login.php");
+         echo "erro!";
       }
    } else {
       die ("erro no banco de dados");
