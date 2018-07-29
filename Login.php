@@ -17,7 +17,7 @@
           <label>Usuario:</label><input type="text" name="usuario"><br>
           <br><label>Senha:</label><input type="password" name="senha"><br>
           <br><input type="submit" value="Acessar" name="botaoAcessar"><br>
-
+          <br><input type="submit" value="Esqueci a Senha" onclick="location.href='LembrarSenha.php'"></a>
         </form>
       </section>
     </div>

@@ -1,67 +1,32 @@
-
 <?php
 
-define('INCLUDE_CHECK',1);
-require "functions.php";
-require "conexao.php";
-
-
-// remove tweets older than 1 hour to prevent spam
-// mysqli_query("DELETE FROM tweets WHERE id>1 AND dt<SUBTIME(NOW(),'0 1:0:0')");
-
-//fetch the timeline
-$q = mysqli_query($conn, "SELECT * FROM tweets ORDER BY id DESC");
-
-$timeline='';
-while($row=mysqli_fetch_assoc($q))
-{
-	$timeline.=formatTweet($row['message'],$row['date']);
-}
-
-// fetch the latest tweet
-$lastTweet = '';
-list($lastTweet) = mysqli_fetch_array(mysqli_query($conn,"SELECT message FROM tweets ORDER BY id DESC LIMIT 1"));
-
-if(!$lastTweet) $lastTweet = "Você não tem tweets ainda!";
+require_once("check_user.php")
 
 ?>
-
-<!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<meta charset="utf-8">
-<title>Timeline</title>
+<title>Mini Twitter</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="Timeline.css">
 
-<link rel="stylesheet" type="text/css" href="demo.css" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
-
-
+  <script src="timeline.js"></script>
 </head>
-
 <body>
+<div class="caixa">
+  <div class="conteudo">
+  <h1> Mini Twitter </h1>
+  <p> Escreva alguma coisa: </p>
+  <textarea id="mensagem" maxlength="140" rows="4"  cols="50" onkeyup="contar(140)" ></textarea>
+</br>
+<h>Caracteres digitados: </h><span id="numero">140</span>
+</br></br></br>
 
-<div id="twitter-container">
-<form id="tweetForm" action="submit.php" method="post">
-
-<span class="counter">140</span>
-<label for="inputField">Diga alguma coisa!</label>
-
-<textarea name="inputField" id="inputField" tabindex="1" rows="2" cols="40"></textarea>
-<input class="submitButton inact" name="submit" type="submit" value="update" disabled="disabled" />
-
-<span class="latest"><strong>Ultimo: </strong><span id="lastTweet"><?=$lastTweet?></span></span>
-
-<div class="clear"></div>
-
-</form>
-
-<h3 class="timeline">Timeline</h3>
-
-<ul class="statuses"><?=$timeline?></ul>
-
-
+  <button type="button" onclick="postar(140)"> Postar </button>
+</br>
+  <h2> Mensagens </h2>
+  <p id="demo"></p>
 </div>
 
+</div>
 </body>
 </html>

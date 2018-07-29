@@ -1,6 +1,99 @@
-.post{
-  display: inline;
-  width: 350px;
+
+.caixa {
+width: 500px;
+background: #ecfee8;
+border-top-style: solid;
+border-width: 15px;
+border-right-style: solid;
+border-right-width: 3px;
+border-left-style: solid;
+border-left-width: 3px;
+border-bottom-style: solid;
+border-bottom-width: 3px;
+border-color: #f15025;
+text-align: center;
+}
+
+.formulario{
+  text-align: left;
+  margin-left: 90px;
+}
+
+
+body {
+width: 100vw;
+height: 100vh;
+background: #4da1a9;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+input[type="text"]{
+height: 30px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin: auto;
+float: right;
+margin-right: 90px;
+}
+
+input[type="email"]{
+height: 30px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin: auto;
+float: right;
+margin-right: 90px;
+}
+
+input[type="password"]{
+height: 30px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin: auto;
+float: right;
+margin-right: 90px;
+}
+
+input[type="date"]{
+height: 30px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin: auto;
+float: right;
+margin-right: 90px;
+}
+
+select{
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
   float: right;
-  background-color: gray;
+  margin-right: 90px;
+}
+
+
+input[type="submit"]{
+background-color: #f15025;
+border: none;
+color: white;
+width: 200px;
+height: 40px;
+text-decoration: none;
+font-size: 16px;
+margin-bottom: 10px;
+cursor: pointer;
+border-radius: 15px;
+text-align: center;
+}
+
+input[type="submit"]:hover{
+background-color: #E16036;
 }
