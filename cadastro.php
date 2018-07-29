@@ -13,20 +13,20 @@
       <h1>Crie sua conta</h1>
       <div class="formulario">
 
-        Nome
-        <input type="text" maxlength="500" name="nome" onkeyup="contaCharNome()"> *
-        <br>
-        <br> Nome de usuário
-        <input type="text" maxlength="50" name="usuario" onkeyup="contaCharUsername()"> *
+        <label>Nome</label>
+        <input type="text" maxlength="500" name="nome" size="40" onkeyup="contaCharNome()">
+        <br><br>
+        <label> Usuário</label>
+        <input type="text" maxlength="50" name="usuario" size="40" onkeyup="contaCharUsername()">
         <br>
         <br> Email
-        <input type="email" maxlength="100" name="email" name="email" onkeyup="contaCharEmail()"> *
+        <input type="email" maxlength="100" name="email" name="email" size="40" onkeyup="contaCharEmail()">
         <br>
         <br> Senha
-        <input type="password" maxlength="100" name="senha"> *
+        <input type="password" maxlength="100" name="senha" size="40">
         <br>
         <br> Data de nascimento
-        <input type="date" name="data"> *
+        <input type="date" name="data">
         <br>
         <br> Sexo
         <select name="sexo">
@@ -36,7 +36,7 @@
         </select>
         <br>
         <br> Pais
-        <select name="pais">x
+        <select name="pais" >
           <option value="África do Sul">África do Sul</option>
           <option value="Albânia">Albânia</option>
           <option value="Alemanha">Alemanha</option>
@@ -214,13 +214,13 @@
         </select>
         <br>
         <br> Site
-        <input type="text" name="site" maxlength="300" ;>
+        <input type="text" name="site" maxlength="300" size="40">
         <br>
         <br>
 
-        <input type="submit" name="cadastrar" value="Enviar">
 
       </div>
+        <input type="submit" name="cadastrar" value="Enviar">
     </div>
   </form>
 </body>
