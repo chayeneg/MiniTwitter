@@ -22,12 +22,10 @@ else{
 
   if ($conn->query($sql) === TRUE) {
     echo "Cadastro efetuado com sucesso!";
-  } else {
-    echo "Erro! Não foi possível cadastrar: " . $sql . "<br>" . $conn->error;
   }
 }
 $conn->close()
 ?><br><br>
-'<a href="login.php">Ir a página de login</a>'
+<p>Cadastro efetuado com sucesso! Faça o login!! </p><input type="submit" value="Logar-se" onclick="location.href='login.php'"></a>
 </body>
 </html>
