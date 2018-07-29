@@ -18,7 +18,7 @@ session_start();
   }
   ?>
   <form method="post" action="valida.php">
-    
+
 
     <label>Usuário</label>
     <input type="text" name="username" placeholder="Digite o seu usuário"><br><br>
