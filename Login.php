@@ -6,7 +6,7 @@
   <main>
     <section id="tela-login">
       <header><h1>Identifique-se</h1></header>
-      <form method="POST" action="processaLogin">
+      <form method="POST" action="processaLogin.php">
         <label>Usuario:</label><input type="text" name="usuario"><br>
         <label>Senha:</label><input type="password" name="senha"><br>
         <input type="submit" value="Acessar" name="botaoAcessar"><br>

@@ -15,7 +15,7 @@ if($nome==""||$usuario==""||$email==""||$senha==""||$dtNasc==""||$sexo==""||$pai
   echo "Os campos marcados com '*' devem ser preenchidos!";
 }
 else{
-  $sql = "INSERT INTO users (name, username, email, password, birthDate, sex, country, website)
+  $sql = "INSERT INTO users (nome, usuario, email, senha, dataNasc, sexo, pais, website)
   VALUES ('$nome','$usuario','$email','$senha','$dtNasc','$sexo','$pais','$site')";
   $execSQL = mysqli_query($conn, $sql);
 
@@ -28,6 +28,6 @@ else{
 }
 $conn->close()
 ?><br><br>
-'<a href="cadastro.php">Voltar a página de cadastro</a>'
+'<a href="login.php">Ir a página de login</a>'
 </body>
 </html>

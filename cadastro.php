@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cadastro</title>
-  <link rel="stylesheet" type="text/css" href="cadastro.css?version=12"/>
+  <link rel="stylesheet" type="text/css" href="cadastro.css"/>
 </head>
 
 <body>
@@ -217,10 +217,8 @@
         <input type="text" name="site" maxlength="300" size="40">
         <br>
         <br>
-
-
       </div>
-        <input type="submit" name="cadastrar" value="Enviar">
+      <input type="submit" name="cadastrar" value="Enviar">
     </div>
   </form>
 </body>
