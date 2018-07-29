@@ -1,18 +1,17 @@
-<?php
-  include_once("conexao.php");
-
-  $login = $_POST['usuario'];
-  $senha = md5($_POST['senha']);
-  $entrar = $_POST['entrar'];
-
-    if (isset($entrar)) {
-
-      $verifica = mysqli_query($conn, "SELECT email FROM users WHERE usuario = '$login' AND senha = '$senha'") or die("erro ao selecionar");
-        if (mysqli_num_rows($verifica)<0){
-          echo"fodac";
-          die();
-        }else{
-          header("Location:timeline.php");
-        }
-    }
-?>
+<html lang="pt">
+<head>
+  <title> Login de Usuário </title>
+</head>
+<body>
+  <main>
+    <section id="tela-login">
+      <header><h1>Identifique-se</h1></header>
+      <form method="POST" action="processaLogin">
+        <label>Usuario:</label><input type="text" name="usuario"><br>
+        <label>Senha:</label><input type="password" name="senha"><br>
+        <input type="submit" value="Acessar" name="botaoAcessar"><br>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
