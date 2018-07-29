@@ -15,10 +15,11 @@
             $_SESSION['error'] = "usuário ou senha incorretos";
             header("Location: login.php");*/
 
-               echo "erro!";
+               header("Location: erro-cad.php");
          }
       } else {
-         echo "erro!";
+         header("Location: erro-cad.php");
+
       }
    } else {
       die ("erro no banco de dados");
