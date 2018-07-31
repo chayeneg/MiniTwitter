@@ -14,29 +14,41 @@
       <div class="formulario">
 
         <label>Nome</label>
-        <input type="text" maxlength="500" name="nome" size="40" onkeyup="contaCharNome()">
-        <br><br>
-        <label> Usuário</label>
-        <input type="text" maxlength="50" name="usuario" size="40" onkeyup="contaCharUsername()">
+        <input type="text" name="nome" size="40" maxlength="50" placeholder="Ex: Bruce Wayne" pattern="[a-z A-Z0-9]+" onkeyup="contaCharNome()" required/>
         <br>
-        <br> Email
-        <input type="email" maxlength="100" name="email" name="email" size="40" onkeyup="contaCharEmail()">
         <br>
-        <br> Senha
-        <input type="password" maxlength="100" name="senha" size="40">
+        <label>Usuário</label>
+        <input type="text" name="usuario" size="40" maxlength="15" placeholder="Ex: waynecorp" pattern="^[A-Za-z0-9_]{1,15}$" onkeyup="contaCharUsername()" required/>
         <br>
-        <br> Data de nascimento
-        <input type="date" name="data">
         <br>
-        <br> Sexo
-        <select name="sexo">
-          <option value="masculino">Masculino</option>
-          <option value="feminino">feminino</option>
-          <option value="outro"></option>
+        <label>Email</label>
+        <input type="email" name="email" size="40" maxlength="100" placeholder="Ex: bruce@wayne.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" onkeyup="contaCharEmail()" required/>
+        <br>
+        <br>
+        <label>Senha</label>
+        <input type="password" name="senha" size="40" maxlength="16"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required/>
+        <br>
+        <br>
+        <label>Confirmar senha</label>
+        <input type="password" name="confirmasenha"  size="40" maxlength="100" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required/>
+        <br>
+        <br>
+        <label>Data de nascimento</label>
+        <input type="date" name="data" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="1900-01-01" max="2100-12-31" required>
+        <br>
+        <br>
+        <label>Sexo</label>
+        <select name="sexo" required>
+          <option value="">Selecione</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">feminino</option>
+          <option value="Outro"></option>
         </select>
         <br>
-        <br> Pais
-        <select name="pais" >
+        <br>
+        <label>Pais</label>
+        <select name="pais" required>
+          <option value="">Selecione</option>
           <option value="África do Sul">África do Sul</option>
           <option value="Albânia">Albânia</option>
           <option value="Alemanha">Alemanha</option>
@@ -59,7 +71,7 @@
           <option value="Benin">Benin</option>
           <option value="Bermudas">Bermudas</option>
           <option value="Botsuana">Botsuana</option>
-          <option value="Brasil" selected>Brasil</option>
+          <option value="Brasil">Brasil </option>
           <option value="Brunei">Brunei</option>
           <option value="Bulgária">Bulgária</option>
           <option value="Burkina Fasso">Burkina Fasso</option>
@@ -213,8 +225,9 @@
           <option value="Zimbábue">Zimbábue</option>
         </select>
         <br>
-        <br> Site
-        <input type="text" name="site" maxlength="300" size="40">
+        <br>
+        <label>Site</label>
+        <input type="text" name="site" size="40" maxlength="100" placeholder="Ex: waynecorp.com" >
         <br>
         <br>
       </div>
