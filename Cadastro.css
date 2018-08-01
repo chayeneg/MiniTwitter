@@ -16,7 +16,19 @@ text-align: center;
 
 .formulario{
   text-align: left;
-  margin-left: 45px;
+  margin-left: 35px;
+}
+
+img[name="img-topo"]{
+  width: 14px;
+  float: none;
+}
+
+img{
+  float: right;
+  width: 14px;
+  margin-top: 8px;
+  margin-right: 5px;
 }
 
 body {
@@ -30,13 +42,13 @@ align-items: center;
 }
 
 input[type="text"]{
-height: 30px;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-margin: auto;
-float: right;
-margin-right: 45px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: auto;
+  float: right;
+  margin-right: 40px;
 }
 
 input[type="email"]{
@@ -46,7 +58,7 @@ border-radius: 4px;
 box-sizing: border-box;
 margin: auto;
 float: right;
-margin-right: 45px;
+margin-right: 40px;
 }
 
 input[type="password"]{
@@ -56,7 +68,7 @@ border-radius: 4px;
 box-sizing: border-box;
 margin: auto;
 float: right;
-margin-right: 45px;
+margin-right: 40px;
 }
 
 input[type="date"]{
@@ -66,7 +78,7 @@ border-radius: 4px;
 box-sizing: border-box;
 margin: auto;
 float: right;
-margin-right: 192px;
+margin-right: 187px;
 }
 
 select[name="sexo"]{
@@ -75,7 +87,7 @@ select[name="sexo"]{
   border-radius: 4px;
   box-sizing: border-box;
   float: right;
-  margin-right:227px;
+  margin-right:223px;
 }
 
 select[name="pais"]{
@@ -84,7 +96,17 @@ select[name="pais"]{
   border-radius: 4px;
   box-sizing: border-box;
   float: right;
-  margin-right:165px;
+  margin-right:161px;
+}
+
+input[name="site"]{
+height: 30px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin: auto;
+float: right;
+margin-right: 42px;
 }
 
 input[type="submit"]{

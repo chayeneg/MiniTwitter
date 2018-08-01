@@ -11,30 +11,37 @@
   <form action="enviaCadastro.php" method="post">
     <div class="caixa">
       <h1>Crie sua conta</h1>
+      <h5>Os campos com o icone <img src="https://png.icons8.com/color/50/000000/high-priority.png" name="img-topo">são obrigatórios. </h5>
+      <br>
       <div class="formulario">
-
         <label>Nome</label>
         <input type="text" name="nome" size="40" maxlength="50" placeholder="Ex: Bruce Wayne" pattern="[a-z A-Z0-9]+" onkeyup="contaCharNome()" required/>
+        <img src="https://png.icons8.com/color/50/000000/high-priority.png">
         <br>
         <br>
         <label>Usuário</label>
         <input type="text" name="usuario" size="40" maxlength="15" placeholder="Ex: waynecorp" pattern="^[A-Za-z0-9_]{1,15}$" onkeyup="contaCharUsername()" required/>
+        <img src="https://png.icons8.com/color/50/000000/high-priority.png">
         <br>
         <br>
         <label>Email</label>
         <input type="email" name="email" size="40" maxlength="100" placeholder="Ex: bruce@wayne.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" onkeyup="contaCharEmail()" required/>
+        <img src="https://png.icons8.com/color/50/000000/high-priority.png">
         <br>
         <br>
         <label>Senha</label>
         <input type="password" name="senha" size="40" maxlength="16"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required/>
+        <img src="https://png.icons8.com/color/50/000000/high-priority.png">
         <br>
         <br>
         <label>Confirmar senha</label>
         <input type="password" name="confirmasenha"  size="40" maxlength="100" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required/>
+        <img src="https://png.icons8.com/color/50/000000/high-priority.png">
         <br>
         <br>
         <label>Data de nascimento</label>
         <input type="date" name="data" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="1900-01-01" max="2100-12-31" required>
+        <img src="https://png.icons8.com/color/50/000000/high-priority.png">
         <br>
         <br>
         <label>Sexo</label>
@@ -44,6 +51,7 @@
           <option value="Feminino">feminino</option>
           <option value="Outro"></option>
         </select>
+        <img src="https://png.icons8.com/color/50/000000/high-priority.png">
         <br>
         <br>
         <label>Pais</label>
@@ -231,6 +239,7 @@
         <br>
         <br>
       </div>
+      <br>
       <input type="submit" name="cadastrar" value="Enviar">
     </div>
   </form>
