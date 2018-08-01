@@ -42,6 +42,5 @@ else{
     echo "<script language'javascript' type='text/javascript'>alert('Cadastro efetuado!');window.location.href='login.php';</script>";
   }
 }
-
 $conn->close()
 ?>

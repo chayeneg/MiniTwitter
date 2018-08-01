@@ -30,7 +30,7 @@
         <br>
         <br>
         <label>Senha</label>
-        <input type="password" name="senha" size="40" maxlength="16"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required/>
+        <input type="password" name="senha" size="40" maxlength="16"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Utilize os caracteres" required/>
         <img src="https://png.icons8.com/color/50/000000/high-priority.png">
         <br>
         <br>
