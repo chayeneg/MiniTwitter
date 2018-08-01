@@ -1,15 +1,15 @@
 <?php
-require_once('conexao.php');
-$username = $_POST['usuario'];
-$password = $_POST['senha'];
-$query = "select usuario, nome, senha from users where usuario = '$username' ";
+require ('conexao.php');
+$usuario = $_POST['usuario'];
+$senha = $_POST['senha'];
+$query = "select usuario, nome, senha from users where usuario = '$usuario' ";
 if ($result = $conn->query($query)) {
   if ($row = $result->fetch_object()){
-    if (strcmp($row->senha, $password)==0){
+    if (strcmp($row->senha, $senha)==0){
       session_start();
       $_SESSION['usuario'] = $row->usuario;
       $_SESSION['nome'] = $row->nome;
-      header("Location: Timeline.php");
+      header("Location: testeSessao.php");
     } else {
       header("Location: erro-cad.php");
     }
