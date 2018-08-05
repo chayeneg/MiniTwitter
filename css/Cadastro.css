@@ -1,17 +1,17 @@
 
 .caixa {
-width: 500px;
-background: #ecfee8;
-border-top-style: solid;
-border-width: 15px;
-border-right-style: solid;
-border-right-width: 3px;
-border-left-style: solid;
-border-left-width: 3px;
-border-bottom-style: solid;
-border-bottom-width: 3px;
-border-color: #f15025;
-text-align: center;
+  width: 500px;
+  background: #ecfee8;
+  border-top-style: solid;
+  border-width: 15px;
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-color: #f15025;
+  text-align: center;
 }
 
 .formulario{
@@ -22,63 +22,87 @@ text-align: center;
 img[name="img-topo"]{
   width: 14px;
   float: none;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
-img{
+img[name="img-padrao"]{
   float: right;
-  width: 14px;
-  margin-top: 8px;
-  margin-right: 5px;
+  width: 10px;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+img[name="img-data"]{
+  float: right;
+  width: 10px;
+  margin-top: 10px;
+  margin-right: 170px;
+}
+
+img[name="img-sexo"]{
+  float: right;
+  width: 10px;
+  margin-top: 10px;
+  margin-right: 208px;
 }
 
 body {
-width: 100vw;
-height: 100vh;
-background: #4da1a9;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #4da1a9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-input[type="text"]{
+input[name="nome"]{
   height: 30px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin: auto;
-  float: right;
-  margin-right: 40px;
+  margin-left: 117px;
+}
+
+input[name="usuario"]{
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 105px;
 }
 
 input[type="email"]{
-height: 30px;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-margin: auto;
-float: right;
-margin-right: 40px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 118px;
 }
 
-input[type="password"]{
-height: 30px;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-margin: auto;
-float: right;
-margin-right: 40px;
+input[name="senha"]{
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 117px;
+}
+
+input[name="confirmasenha"]{
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 49px;
 }
 
 input[type="date"]{
-height: 30px;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-margin: auto;
-float: right;
-margin-right: 187px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 30px;
 }
 
 select[name="sexo"]{
@@ -86,43 +110,39 @@ select[name="sexo"]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  float: right;
-  margin-right:223px;
+  margin-left: 123px;
 }
 
-select[name="pais"]{
+input[name="cidade"]{
   height: 30px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  float: right;
-  margin-right:161px;
+  margin-left: 110px;
 }
 
 input[name="site"]{
-height: 30px;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-margin: auto;
-float: right;
-margin-right: 42px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 129px;
 }
 
 input[type="submit"]{
-background-color: #f15025;
-border: none;
-color: white;
-width: 200px;
-height: 40px;
-text-decoration: none;
-font-size: 16px;
-margin-bottom: 10px;
-cursor: pointer;
-border-radius: 15px;
-text-align: center;
+  background-color: #f15025;
+  border: none;
+  color: white;
+  width: 200px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: center;
 }
 
 input[type="submit"]:hover{
-background-color: #E16036;
+  background-color: #E16036;
 }
