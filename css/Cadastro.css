@@ -62,7 +62,7 @@ input[name="nome"]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-left: 117px;
+  margin-left: 116px;
 }
 
 input[name="usuario"]{
@@ -70,7 +70,7 @@ input[name="usuario"]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-left: 105px;
+  margin-left: 104px;
 }
 
 input[type="email"]{
@@ -78,7 +78,7 @@ input[type="email"]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-left: 118px;
+  margin-left: 117px;
 }
 
 input[name="senha"]{
@@ -86,7 +86,7 @@ input[name="senha"]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-left: 117px;
+  margin-left: 116px;
 }
 
 input[name="confirmasenha"]{
@@ -94,7 +94,7 @@ input[name="confirmasenha"]{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-left: 49px;
+  margin-left: 48px;
 }
 
 input[type="date"]{
