@@ -28,11 +28,11 @@
           <img src="https://png.icons8.com/color/50/000000/high-priority.png" name="img-padrao"><br/><br/>
 
           <label for="senha">Senha</label>
-          <input type="password" id="senha" name="senha" size="40" maxlength="50"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Utilize os caracteres" required/>
+          <input type="password" id="senha" name="senha" size="40" maxlength="50"  pattern="[a-z0-9]{6,12}" title="Utilize os caracteres" required/>
           <img src="https://png.icons8.com/color/50/000000/high-priority.png" name="img-padrao"><br/><br/>
 
           <label for="confirmasenha">Confirmar senha</label>
-          <input type="password" id="confirmasenha" name="confirmasenha"  size="40" maxlength="50" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required/>
+          <input type="password" id="confirmasenha" name="confirmasenha"  size="40" maxlength="50" pattern="[a-z0-9]{6,12}" required/>
           <img src="https://png.icons8.com/color/50/000000/high-priority.png" name="img-padrao"><br/><br/>
 
           <label for="data">Data de nascimento</label>
@@ -49,7 +49,7 @@
           <img src="https://png.icons8.com/color/50/000000/high-priority.png"name="img-sexo"><br/><br/>
 
           <label for="cidade">Cidade</label>
-          <input type="text" id="cidade" name="cidade" size="40" maxlength="100" placeholder="Cidade"/>
+          <input type="text" id="cidade" name="city" size="40" maxlength="100" placeholder="Cidade"/>
           <img src="https://png.icons8.com/color/50/000000/high-priority.png"name="img-padrao"><br/><br/>
 
           <label for="site">Site</label>
