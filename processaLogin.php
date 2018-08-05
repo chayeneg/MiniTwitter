@@ -10,7 +10,6 @@ if ($result = $conn->query($query)) {
       $_SESSION['usuario'] = $row->usuario;
       $_SESSION['nome'] = $row->nome;
       header("Location: timeline.php");
-      echo('usuario');
     } else {
       header("Location: erro-cad.php");
     }

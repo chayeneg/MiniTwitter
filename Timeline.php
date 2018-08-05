@@ -1,7 +1,6 @@
 <?php
 
 require_once("check_user.php")
-
 ?>
 <html lang="pt-br">
 <head>
@@ -17,6 +16,7 @@ require_once("check_user.php")
 <div class="caixa">
   <div class="conteudo">
   <h1> Mini Twitter </h1>
+  
   <p> Escreva alguma coisa: </p>
   <textarea name="mensagem" maxlength="140" rows="4"  cols="50" onkeyup="contar(140)" ></textarea>
 </br>
