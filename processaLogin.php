@@ -9,7 +9,8 @@ if ($result = $conn->query($query)) {
       session_start();
       $_SESSION['usuario'] = $row->usuario;
       $_SESSION['nome'] = $row->nome;
-      header("Location: testeSessao.php");
+      header("Location: timeline.php");
+      echo('usuario');
     } else {
       header("Location: erro-cad.php");
     }
