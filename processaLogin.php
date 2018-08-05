@@ -1,23 +1,25 @@
 <?php
 require ('conexao.php');
-$usuario = $_POST['usuario'];
-$senha = $_POST['senha'];
-$query = "select usuario, nome, senha from users where usuario = '$usuario' ";
+$usuario = $_POST['username'];
+$senha = $_POST['password'];
+$query = "select username, name, password from users where username = '$usuario' ";
 if ($result = $conn->query($query)) {
   if ($row = $result->fetch_object()){
-    if (strcmp($row->senha, $senha)==0){
+    if (strcmp($row->password, $senha)==0){
       session_start();
-      $_SESSION['usuario'] = $row->usuario;
-      $_SESSION['nome'] = $row->nome;
-      header("Location: timeline.php");
+      $_SESSION['username'] = $row->username;
+      $_SESSION['name'] = $row->name;
+      header("Location: Timeline.php");
     } else {
-      header("Location: erro-cad.php");
+      echo "As senhas nao conferem";
+      //header("Location: erro-cad.php");
     }
   } else {
-    header("Location: erro-cad.php");
-
+    //header("Location: erro-cad.php");
+    echo "nao sei";
   }
-} else {
+}
+else {
   die ("erro no banco de dados");
 }
 ?>

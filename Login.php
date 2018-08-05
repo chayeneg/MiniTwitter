@@ -15,8 +15,8 @@
         <header><h1> Logar </h1></header>
         <p> Entre com seu usuario e a senha</p>
         <form method="POST" action="processaLogin.php">
-          <label>Usuario:</label><input type="text" name="usuario"><br>
-          <br><label>Senha:</label><input type="password" name="senha"><br>
+          <label>Usuario:</label><input type="text" name="username" size="30"><br>
+          <br><label>Senha:</label><input type="password" name="password"><br>
           <br><input type="submit" value="Acessar" name="botaoAcessar"><br>
           <br><input type="submit" value="Esqueci a Senha" onclick="location.href='LembrarSenha.php'"></a>
         </form>

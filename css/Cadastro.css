@@ -113,7 +113,7 @@ select[name="sexo"]{
   margin-left: 123px;
 }
 
-input[name="cidade"]{
+input[name="city"]{
   height: 30px;
   border: 1px solid #ccc;
   border-radius: 4px;
