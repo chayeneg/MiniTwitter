@@ -7,7 +7,7 @@ require_once("check_user.php")
 <head>
 <title>Mini Twitter</title>
 <head>
-  <link rel="stylesheet" type="text/css" href="Timeline.css">
+  <link rel="stylesheet" type="text/css" href="css/Timeline.css">
 
   <script src="timeline.js"></script>
 </head>

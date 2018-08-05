@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Mini-Twitter</title>
-<link rel="stylesheet" type="text/css" href="LembrarSenha.css">
+<link rel="stylesheet" type="text/css" href="css/LembrarSenha.css">
 
 
 </head>

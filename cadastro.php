@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cadastro</title>
-  <link rel="stylesheet" type="text/css" href="cadastro.css"/>
+  <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
 </head>
 
 <body>

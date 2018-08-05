@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 
-<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 
 <title>Mini-Twitter</title>
 </head>
