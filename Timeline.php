@@ -1,6 +1,7 @@
 <?php
 
-require_once("check_user.php")
+require_once("check_user.php");
+require_once("conexao.php");
 
 ?>
 
@@ -14,16 +15,20 @@ require_once("check_user.php")
 </head>
 <body>
   <form action="enviaTimeline.php" method="post">
-
 <div class="caixa">
   <div class="conteudo">
   <h1> Mini Twitter </h1>
   <strong>
   Olá <?php
-
   $str = "$auth_username";
   $str = strtoupper($str);
-  print $str;?>
+  print $str;
+  $sql = "select id from users where username = '$str'";
+
+  $execSQL = mysqli_query($conn, $sql);
+  $resultUser = $execSQL->fetch_assoc();
+  echo $resultUser["id"];
+  ?>
 </strong>
   <p> Escreva alguma coisa: </p>
   <textarea id="mensagem" name="mensagem" maxlength="140" rows="4"  cols="50" onkeyup="conta(140)" ></textarea>

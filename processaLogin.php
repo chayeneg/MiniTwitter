@@ -2,13 +2,13 @@
 require ('conexao.php');
 $usuario = $_POST['username'];
 $senha = $_POST['password'];
-$query = "select username, name, password from users where username = '$usuario' ";
+$query = "select username, id, password from users where username = '$usuario' ";
 if ($result = $conn->query($query)) {
   if ($row = $result->fetch_object()){
     if (strcmp($row->password, $senha)==0){
       session_start();
       $_SESSION['username'] = $row->username;
-      $_SESSION['name'] = $row->name;
+      $_SESSION['id'] = $row->id;
       header("Location: Timeline.php");
     } else {
       echo "As senhas nao conferem";
