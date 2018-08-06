@@ -1,15 +1,13 @@
-function postar(tam){
-  var post = document.getElementById("mensagem").value;
-  document.getElementById("demo").innerHTML = post;
-  valor = tam;
-  document.getElementById("numero").innerHTML= valor;
-  document.getElementById("mensagem").value="";
+function conta(tam){
+  var totalchar = tam - document.getElementById("caixatexto").value.length;
+  if (totalchar < 0){
+    totalchar--;
+  }
+  document.getElementById("total").innerHTML="Caracteres restantes:"+ totalchar;
 }
 
-function contar(tam){
-  var valor = tam - document.getElementById("mensagem").value.length;
-  if (valor < 0){
-    valor--;
-  }
-  document.getElementById("numero").innerHTML = valor;
+function envia(){
+  totalchar = 140;
+  document.getElementById("total").innerHTML="Caracteres restantes:"+ totalchar;
+  document.getElementById("caixatexto").value="";
 }
