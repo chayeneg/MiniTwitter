@@ -8,7 +8,7 @@ $sql = "INSERT INTO tweets (message) values ('$tweet')";
 $execSQL = mysqli_query($conn, $sql);
 
 if ($execSQL) {
-  echo "'mensagem'";
+  echo "okok!";
 }
 
 $conn->close()

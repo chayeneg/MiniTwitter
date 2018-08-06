@@ -1,5 +1,5 @@
 function conta(tam){
-  var totalchar = tam - document.getElementById("caixatexto").value.length;
+  var totalchar = tam - document.getElementById("mensagem").value.length;
   if (totalchar < 0){
     totalchar--;
   }
@@ -9,5 +9,5 @@ function conta(tam){
 function envia(){
   totalchar = 140;
   document.getElementById("total").innerHTML="Caracteres restantes:"+ totalchar;
-  document.getElementById("caixatexto").value="";
+  document.getElementById("mensagem").value="";
 }
