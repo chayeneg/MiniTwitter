@@ -44,18 +44,11 @@ require_once("conexao.php");
 </form>
   <h2> Mensagens </h2>
 
-  <?php
-  $post = "select * from tweets";
-  $execSQL = mysqli_query($conn, $post);
-  $resulPost = $execSQL->fetch_assoc();
-  echo $resulPost["message"];
-
-
-
-      ?>
 
   <p id="demo"></p>
-</div>
+
+
+<input type="button" value="Sair" onclick="location.href='logout.php'"></div>
 
 </div>
 </body>

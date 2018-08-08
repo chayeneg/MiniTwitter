@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Cadastro</title>
   <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
+
 </head>
 
 <body>
@@ -11,6 +12,7 @@
   <section id="panel">
     <form action="enviaCadastro.php" method="post">
       <div class="caixa">
+
         <h1>Crie sua conta</h1>
         <p>Os campos com o icone<img src="https://png.icons8.com/color/50/000000/high-priority.png" name="img-topo">são obrigatórios. </p>
         <br>

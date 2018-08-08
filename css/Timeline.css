@@ -58,3 +58,20 @@ text-align: center;
 input[type="submit"]:hover{
 background-color: #E16036;
 }
+
+input{
+  background-color: #f15025;
+  border: none;
+  color: white;
+  width: 200px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+input:hover{
+  background-color: #E16036;
+}

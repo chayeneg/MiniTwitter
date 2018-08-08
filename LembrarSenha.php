@@ -11,6 +11,8 @@
 <body>
   <div class="caixa">
     <div class="conteudo">
+      <?php include("header.php"); ?>
+
       <legend><h1> Esqueceu a Senha? </h1></legend>
   Informe o seu e-mail e enviaremos o link para alteração de senha:<br>
 
