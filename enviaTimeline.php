@@ -10,7 +10,7 @@ $sql = "INSERT INTO tweets (message) values ('$tweet')";
 $execSQL = mysqli_query($conn, $sql);
 
 if ($execSQL) {
-  echo "okok!";
+  header("location: timeline.php");
 }
 
 $conn->close()

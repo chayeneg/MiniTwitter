@@ -20,11 +20,13 @@ require_once("conexao.php");
   <h1> Mini Twitter </h1>
   <strong>
   Olá <?php
+  //exibe o nome do usuario em tela
   $str = "$auth_username";
   $str = strtoupper($str);
   print $str;
-  $sql = "select id from users where username = '$str'";
 
+  //exibe o id do usuario
+  $sql = "select id from users where username = '$str'";
   $execSQL = mysqli_query($conn, $sql);
   $resultUser = $execSQL->fetch_assoc();
   echo $resultUser["id"];
@@ -41,9 +43,17 @@ require_once("conexao.php");
 </form>
   <h2> Mensagens </h2>
 
-  <?
+  <?php
+  $sql = mysqli_query("select * from tweets");
+  echo "<table>";
+  while ($exibe - mysqli_fetch_assoc($sql)){
+    echo "<tr><td>Mensagens:</td>";
+    echo "td>".$exibe["Mensagens"]."</td></tr>";
+  }
+  echo "</table>";
 
-  ?>
+
+      ?>
 
   <p id="demo"></p>
 </div>
