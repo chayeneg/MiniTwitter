@@ -12,9 +12,9 @@
     <form action="enviaCadastro.php" method="post">
       <div class="caixa">
         <h1>Crie sua conta</h1>
-        <h5>Os campos com o icone<img src="https://png.icons8.com/color/50/000000/high-priority.png" name="img-topo">são obrigatórios. </h5>
+        <p>Os campos com o icone<img src="https://png.icons8.com/color/50/000000/high-priority.png" name="img-topo">são obrigatórios. </p>
         <br>
-        <div class="formulario">
+        <div class="formulario"><strong>
           <label for="nome">Nome</label>
           <input type="text" id="nome" name="nome" size="40" maxlength="50" placeholder="Ex: Bruce Wayne" pattern="[a-z A-Z0-9]+" onkeyup="contaCharNome()" required/>
           <img src="https://png.icons8.com/color/50/000000/high-priority.png" name="img-padrao"><br/><br/>
@@ -54,7 +54,7 @@
 
           <label for="site">Site</label>
           <input type="text" id="site" name="site" size="40" maxlength="100" placeholder="Ex: waynecorp.com"/><br/><br/>
-        </div><br/>
+        </div><br/></strong>
         <input type="submit" name="cadastrar" value="Enviar">
       </div>
     </form>

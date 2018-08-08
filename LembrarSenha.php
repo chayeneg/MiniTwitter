@@ -11,11 +11,11 @@
 <body>
   <div class="caixa">
     <div class="conteudo">
-      <legend><h1> Esqueci a Senha </h1></legend>
+      <legend><h1> Esqueceu a Senha? </h1></legend>
   Informe o seu e-mail e enviaremos o link para alteração de senha:<br>
 
   <br>E-mail
-  <br><input type="email" name="email"><br>
+  <br><input type="email" size="40" name="email"><br>
 
   <br><button type="button" onclick="LembrarSenha()"> Enviar e-mail </button>
 

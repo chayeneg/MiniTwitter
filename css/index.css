@@ -1,6 +1,6 @@
 .caixa {
-  width: 300px;
-  height: 430px;
+  width: auto;
+  height: auto;
   background: #ecfee8;
   border-top-style: solid;
   border-width: 15px;
