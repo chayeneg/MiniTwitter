@@ -8,6 +8,9 @@
 </head>
 
 <body>
+  <div class="main">
+  <?php include("header.php"); ?>
+  <br>
   <div class="caixa">
     <div class="conteudo">
       <img src="https://png.icons8.com/color/100/000000/fenix.png">
@@ -19,6 +22,7 @@
 
     </div>
   </div>
+</div>
 </body>
 
 </html>

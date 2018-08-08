@@ -1,6 +1,46 @@
+.main{
+  display: table-column;
+}
+
+#logo {
+  height: 50px;
+  width: 600px;
+  color: #f15025;
+  border-bottom: solid #f15025;
+  border-top: solid #f15025;
+  border-top-width: 15px;
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-left-style: solid;
+  border-left-width: 3px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #ecfee8;
+}
+
+#menu {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px;
+  font-variant: small-caps;
+  color: white;
+}
+
+a{
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px;
+  font-variant: small-caps;
+  color: white;
+}
 .caixa {
   width: 300px;
   height: 430px;
+  margin-top: 50px;
+  margin-left: 142px;
   background: #ecfee8;
   border-top-style: solid;
   border-width: 15px;
@@ -21,24 +61,25 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: #4da1a9;
+  background: #084c61;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center
+  margin: 0;
 }
 
 input{
-    background-color: #f15025;
-    border: none;
-    color: white;
-    width: 200px;
-    height: 40px;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 15px;
+  background-color: #f15025;
+  border: none;
+  color: white;
+  width: 200px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
 input:hover{
