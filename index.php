@@ -5,22 +5,28 @@
   </head>
   <body>
     <div class="main">
+      <div class="menu">
+				<ul>
+					<li> <a href="index.php"> Home </a> </li>
+					<li> <a href="login.php"> Entrar </a> </li>
+          <li> <a href="cadastro.php"> Cadastrar </a> </li>
+
+				</ul>
+			</div>
       <div class="content">
         <div class="content-inner">
 
     <h1>Mini-Twitter</h1>
     <p>Venha contar suas frustrações</p>
-    <a id="link" href="cadastro.php">Inscrever-se</a>
-    <br>
-    <a id="link" href="login.php">Conectar-se</a>
 
         </div>
       </div>
+      <br style="clear:both">
 
-      <div class="sidebar">
-        <p> teste  teste  teste  teste  teste  teste  teste  teste  teste  teste  teste  teste  teste  teste  teste  teste  teste teste  teste  teste  teste  teste  teste  teste  teste teste  teste  teste  teste  teste  teste  teste  teste teste  teste  teste  teste  teste  teste  teste  teste teste  teste  teste  teste  teste  teste  teste  teste teste  teste  teste  teste  teste  teste  teste  teste teste  teste  teste  teste  teste  teste  teste  teste teste  teste  teste  teste  teste  test </p>
-
-      </div>
+      <br><br>
+			<div class="footer">
+				Rodapé
+			</div>
   </div>
 
 
