@@ -1,45 +1,31 @@
 <?php
-require_once("verifica-usuario.php");
-require_once("conexao.php");
+  require_once('verifica-usuario.php');
+  require_once('conexao.php');
+  $username = "$auth_username";
+  $name = "$auth_name";
 ?>
 
 <html lang="pt-br">
 <head>
-  <title>Mini Twitter</title>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/Timeline.css">
-    <script src="javascript/timeline.js"></script>
-  </head>
+  <title>Mini-Twitter</title>
+  <script src="javascript/timeline.js"></script>
+</head>
   <body>
-    <form action="enviaTimeline.php" method="post">
-      <div class="caixa">
-        <div class="conteudo">
-          <h1> Mini Twitter </h1>
-          <strong>
-            Olá  <?php
-            //exibe o nome do usuario em tela
-            $str = "$auth_username";
-            $str = strtoupper($str);
-            print $str;
-            print "\n";
-            ?>
-          </strong>
-          <p> Escreva alguma coisa: </p>
-          <textarea id="mensagem" name="mensagem" maxlength="140" rows="4"  cols="50" onkeyup="conta(140)" ></textarea>
-        </br>
-        <p id="total">Caracteres restantes: 140</p>
-
-      </br></br></br>
-      <input type="submit" name="twettar" value="Twettar">
+    <h1>Mini-Twitter</h1>
+    <h2>Timeline</h2>
+    <form action="processa-timeline" method="post">
+      <fieldset id="login-box">
+        <input type="button" id="profile-btn" value="Perfil" onclick="location.href='perfil.php'">
+        <input type="button" id="profile-btn" value="Sair" onclick="location.href='logout.php'"><br>
+        <?php
+          echo $name . "<br>" . "@" . $username . "<br>";
+        ?>
+      </fieldset><br>
+          <textarea class="post" id="new_message" name="new_message" placeholder="O que você está pensando?" rows="5" cols="40" onkeyup="conta(140)" maxlength="140"></textarea>
+          <p id="char_count" name="char_count"> 140 caracteres restantes </p>
+      <input type="submit" id="btn-submit" name="btn-submit" value="Twettar">
     </br>
   </form>
-  <h2> Mensagens </h2>
-
-
-  <p id="demo"></p>
-
-
-  <input type="button" value="Sair" onclick="location.href='logout.php'"></div>
 
 </div>
 </body>
