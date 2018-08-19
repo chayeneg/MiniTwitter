@@ -12,9 +12,9 @@
       </div>
       <div id="menu">
 				<ul>
-					<li> <a href="index.php"> Página Inicial </a> </li>
-          <li> <a href="cadastro.php"> Cadastrar </a> </li>
-          <li> <a href="login.php"> Logar </a> </li>
+					<li> <a href="index.php"> PÁGINA INICIAL </a> </li>
+          <li> <a href="cadastro.php"> CADASTRAR </a> </li>
+          <li> <a href="login.php"> LOGAR </a> </li>
 				</ul>
 			</div>
 
