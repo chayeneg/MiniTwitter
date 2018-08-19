@@ -22,5 +22,13 @@
       <input type="text" id="website" size="40" placeholder="Seu site"><br><br>
       <input type="submit" id="submit" size="40" value="Enviar"><br><br>
     </form>
+    <?php
+        session_start();
+        if (isset($_SESSION['error'])) {
+           $e = $_SESSION['error'];
+           echo "<h1 class='error'>$e</h1>";
+           unset($_SESSION['error']);
+        }
+     ?>
   </body>
 </html>
