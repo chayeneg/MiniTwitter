@@ -5,33 +5,21 @@
    $username = $_POST['username'];
    $email = $_POST['email'];
    $password = $_POST['password'];
-   $confirmation = $_POST['confirm-password'];
+   $confirmation = $_POST['confirmation'];
    $date = $_POST['date'];
    $sex = $_POST['sex'];
    $city = $_POST['city'];
    $website = $_POST['website'];
 
    if (strcmp($confirmation, $password)!=0){
-      session_start();
-      $_SESSION['error'] = "As senhas não conferem!";
-      $_SESSION['name'] = $name;
-      $_SESSION['username'] = $username;
-      $_SESSION['email'] = $email;
-      $_SESSION['date'] = $date;
-      $_SESSION['sex'] = $sex;
-      $_SESSION['city'] = $city;
-      $_SESSION['website'] = $website;
-      header("Location: cadastro.php");
+       echo "<script language'javascript' type='text/javascript'>alert('As senhas não conferem!');window.location.href='cadastro.php';</script>";
    } else {
-      //validar senha e confirmação
-      $stmt = $conn->prepare("INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?)");
-      $stmt->bind_param("ssss", $name, $username, $email, $password );
+      $stmt = $conn->prepare("INSERT INTO users (name, username, email, password, birthDate, sex, city, website) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+      $stmt->bind_param("ssssssss", $name, $username, $email, $password, $date, $sex, $city, $website);
       if ($stmt->execute()){
-         header("Location: index.php");
+             echo "<script language'javascript' type='text/javascript'>alert('Cadastro efetuado!');window.location.href='index.php';</script>";
       } else {
-         session_start();
-         $_SESSION['error'] = "erro no banco de dados";
-         header("Location: new.php");
+          echo "<script language'javascript' type='text/javascript'>alert('Erro no banco de dados!');window.location.href='cadastro.php';</script>";
       }
    }
 ?>
