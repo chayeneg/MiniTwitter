@@ -7,20 +7,39 @@ $name = "$auth_name";
 
 <html lang="pt-br">
 <head>
-  <title>Mini-Twitter</title>
+  <head>
+    <title>Mini-Twitter</title>
+      <link rel="stylesheet" type="text/css" href="style-timeline.css">
+      <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <script src="javascript/timeline.js"></script>
 </head>
 <body>
-  <h1>Mini-Twitter</h1>
+  <div class="main">
+    <div class="titulo">
+        <h1>Mini Twitter</h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li> <a onclick="location.href='index.php'"> PÁGINA INICIAL </a> </li>
+        <li> <a onclick="location.href='cadastro.php'"> CADASTRAR </a> </li>
+        <li> <a onclick="location.href='perfil.php'"> PERFIL </a> </li>
+          <li> <a onclick="location.href='logout.php'"> SAIR  </a> </li>
+      </ul>
+    </div>
+
+    <div class="content"><br><br>
+            <fieldset>
+
+      <div class="content-inner">
   <h2>Timeline</h2>
   <form action="processa-timeline.php" method="post">
-      <input type="button" id="profile-btn" value="Perfil" onclick="location.href='perfil.php'">
-      <input type="button" id="profile-btn" value="Sair" onclick="location.href='logout.php'"><br>
+
       <?php
       echo $name . "<br>" . "@" . $username . "<br>";
       ?>
       <br>
-    <textarea class="post" id="new_message" name="new_message" placeholder="O que você está pensando?" rows="5" cols="40" onkeyup="conta(140)" maxlength="140"></textarea>
+    <textarea class="post" id="new_message" name="new_message" placeholder=" O que você está pensando?" rows="5" cols="40" onkeyup="conta(140)" maxlength="140"></textarea>
     <p id="char_count" name="char_count"> 140 caracteres restantes </p>
     <input type="submit" id="btn-submit" name="btn-submit" value="Twettar"><br><br>
   </form>
@@ -34,13 +53,25 @@ $name = "$auth_name";
             echo $row["name"] . " - " . $row["date"] . "<br>";
             echo "@" . $row["username"]  . "<br>";
             echo $row["message"] . "<br>" ;
+
+            echo "____________________________________________________________";
             echo "<br>";
           }
         }
         else{
-          echo "aida não existem mensagens postadas.";
+          echo " Ainda não existem mensagens postadas. ";
         }
       ?>
+    </div>
+  </div>
+
+  <br style="clear:both">
+      </fieldset>
+  <div class="footer">
+    Copyright©2018, Fayenel Company.
+      <br>Todos os direitos reservados.
+  </div>
+  </div>
 
 </body>
 </html>
