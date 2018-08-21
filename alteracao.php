@@ -24,7 +24,7 @@
         <div class="content-inner">
     <h2>Alteração de informações</h2>
     <p>Mude suas informações abaixo.</p>
-    <form action="processa-cadastro.php" method="post">
+    <form action="processa-alteracao.php" method="post">
       <input type="text" id="name" name="name" size="40" maxlength="100" placeholder="Seu nome completo" required> *<br><br>
       <input type="date" id="date" name="date" size="40" required> *<br><br>
       <select id="sex" name="sex" required>
@@ -34,7 +34,7 @@
       </select> *<br><br>
       <input type="text" id="city" name="city" size="40" maxlength="30" placeholder="Sua cidade" required> *<br><br>
       <input type="text" id="website" name="website" size="40" maxlength="50" placeholder="Seu site"><br><br>
-      <input type="submit" id="submit" size="40" value="Enviar"><br><br>
+      <input type="submit" id="submit" size="40" value="Alterar"><br><br>
     </form>
   </div>
 </div>
