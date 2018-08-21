@@ -53,7 +53,7 @@ $name = "$auth_name";
             echo $row["name"] . " - " . $row["date"] . "<br>";
             echo "@" . $row["username"]  . "<br>";
             echo $row["message"] . "<br>" ;
-
+            echo "<a href='deleta.php'>Excluir</a><br><br>";
             echo "____________________________________________________________";
             echo "<br>";
           }

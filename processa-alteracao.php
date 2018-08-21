@@ -10,8 +10,9 @@
   $city = $_POST['city'];
   $website = $_POST['website'];
 
-  $sql = "UPDATE users SET name='$name', birthDate='$date', sex='$sex', city='$city', website='$website' WHERE username = '$username'";
-  if ($conn->query($sql) === TRUE) {
-    echo "<script language'javascript' type='text/javascript'>alert('Os seus dados foram alterados!');window.location.href='timeline.php';</script>";
-  }
+      $sql = "UPDATE users SET name='$name', birthDate='$date', sex='$sex', city='$city', website='$website' WHERE username = '$username'";
+      if ($conn->query($sql) === TRUE) {
+        echo "<script language'javascript' type='text/javascript'>alert('Os seus dados foram alterados!');window.location.href='login.php';</script>";
+      }
+
  ?>
