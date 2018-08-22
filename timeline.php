@@ -45,7 +45,7 @@ $name = "$auth_name";
   </form>
     <h2> Veja o que estão falando </h2>
       <?php
-        $sql = "SELECT users.name, users.username, tweets.date, tweets.message FROM users INNER JOIN tweets ON users.id = tweets.user_id ORDER BY tweets.date DESC";
+        $sql = "SELECT users.name, users.username, tweets.date, tweets.message, tweets.id as id FROM users INNER JOIN tweets ON users.id = tweets.user_id ORDER BY tweets.date DESC";
         $result = mysqli_query($conn, $sql);
 
         if(mysqli_num_rows($result)>0){
@@ -53,9 +53,12 @@ $name = "$auth_name";
             echo $row["name"] . " - " . $row["date"] . "<br>";
             echo "@" . $row["username"]  . "<br>";
             echo $row["message"] . "<br><br>" ;
+            if($username==$row["username"]){
+                $_SESSION['tweets_id'] = $row["id"];
             ?>
-                <button onclick="location.href='deleta.php'"> deletar mensagem </button><br>
+                <button onclick="location.href='deleta.php'">Excluir</button><br>
             <?php
+            }
             echo "____________________________________________________________";
             echo "<br>";
           }
