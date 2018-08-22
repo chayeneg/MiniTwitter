@@ -25,12 +25,33 @@ $name = "$auth_name";
         <li> <a onclick="location.href='cadastro.php'"> CADASTRAR </a> </li>
         <li> <a onclick="location.href='perfil.php'"> PERFIL </a> </li>
           <li> <a onclick="location.href='logout.php'"> SAIR  </a> </li>
-      </ul>
+      </ul><br><br>
     </div>
 
-    <div class="content"><br><br>
-            <fieldset>
 
+      <br style="clear:both">
+      <div class="perfil">
+        <fieldset>
+        <h2>Perfil</h2>
+          <?php
+            $sql = "SELECT * FROM users WHERE username = '$username'";
+            $result = mysqli_query($conn, $sql);
+            while($row = mysqli_fetch_assoc($result)){
+              echo "<table id='tabela_infos' style='width:100%'>";
+              echo "<tr>Nome completo: " . $row["name"] . "</tr><br>";
+              echo "<tr>Nome de usuário: " . $row["username"] . "</tr><br>";
+              echo "<tr>Email: " . $row["email"] . "</tr><br>";
+              echo "<tr>Data de nascimento: " . $row["birthDate"] . "</tr><br>";
+              echo "<tr>Sexo: " . $row["sex"] . "</tr><br>";
+              echo "<tr>Cidade: " . $row["city"] . "</tr><br>";
+              echo "<tr>Site: " . $row["website"] . "</tr><br>";
+              echo "</table>";
+            }
+          ?>
+        </fieldset>
+      </div>
+            <fieldset>
+<div class="content"><br><br>
       <div class="content-inner">
   <h2>Timeline</h2>
   <form action="processa-timeline.php" method="post">

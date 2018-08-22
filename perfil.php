@@ -18,19 +18,18 @@ $name = "$auth_name";
           <h1>Mini Twitter</h1>
       </div>
       <div id="menu">
-				<ul>
-					<li> <a href="index.php"> PÁGINA INICIAL </a> </li>
-          <li> <a href="cadastro.php"> CADASTRAR </a> </li>
-          <li> <a href="login.php"> LOGAR </a> </li>
-				</ul>
-			</div>
+        <ul>
+          <li> <a onclick="location.href='index.php'"> PÁGINA INICIAL </a> </li>
+          <li> <a onclick="location.href='cadastro.php'"> CADASTRAR </a> </li>
+          <li> <a onclick="location.href='perfil.php'"> PERFIL </a> </li>
+            <li> <a onclick="location.href='logout.php'"> SAIR  </a> </li>
+        </ul><br><br>
+      </div>
 
       <div class="content"><br><br>
               <fieldset>
-
-        <div class="content-inner">
-  <h1>Mini-Twitter</h1>
-  <h2>Perfil</h2>
+  <h1>Perfil</h1>
+  <div class="perfil">
     <?php
       $sql = "SELECT * FROM users WHERE username = '$username'";
       $result = mysqli_query($conn, $sql);
@@ -50,6 +49,15 @@ $name = "$auth_name";
 
     <p>Se você desejar é possível alterar suas informações.</p>
     <input type="button" id="button" value="Alterar" onclick="location.href='alteracao.php'">
+</div>
+</div>
   </form>
+
+  <br style="clear:both">
+      </fieldset>
+  <div class="footer">
+    Copyright©2018, Fayenel Company.
+      <br>Todos os direitos reservados.
+  </div>
 </body>
 </html>
