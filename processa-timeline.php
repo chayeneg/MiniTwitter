@@ -8,7 +8,7 @@
   $stmt = $conn->prepare("INSERT INTO tweets (message, user_id) VALUES (?, ?)");
   $stmt->bind_param("ss", $message, $user_id);
   if ($stmt->execute()){
-         echo "<script language'javascript' type='text/javascript'>alert('A mensagem foi postada!');window.location.href='timeline.php';</script>";
+         header("location:timeline.php");
   } else {
       echo "<script language'javascript' type='text/javascript'>alert('Erro no banco de dados!');window.location.href='cadastro.php';</script>";
   }
