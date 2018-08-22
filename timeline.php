@@ -52,8 +52,10 @@ $name = "$auth_name";
           while($row = mysqli_fetch_assoc($result)){
             echo $row["name"] . " - " . $row["date"] . "<br>";
             echo "@" . $row["username"]  . "<br>";
-            echo $row["message"] . "<br>" ;
-            echo "<a href='deleta.php'>Excluir</a><br><br>";
+            echo $row["message"] . "<br><br>" ;
+            ?>
+                <button onclick="location.href='deleta.php'"> deletar mensagem </button><br>
+            <?php
             echo "____________________________________________________________";
             echo "<br>";
           }
