@@ -28,7 +28,7 @@
     <form action="processa-login.php" method="post">
       <input type="text" id="username" name="username" size="40" placeholder="Nome de usuário" required><br><br>
       <input type="password" id="password" name="password" size="40" placeholder="Senha" required><br><br>
-      <input type="submit" id="submit" size="40" value="Logar"><br><br>
+      <input type="submit" id="submit" size="40" value="Logar"> <input type="button" class="button" href="lembrarsenha.php" value="Esqueci A Senha"> </button><br><br>
     </form>
   </div>
 </div>

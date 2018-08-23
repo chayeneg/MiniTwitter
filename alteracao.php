@@ -18,12 +18,13 @@ $name = "$auth_name";
           <h1>Mini Twitter</h1>
       </div>
       <div id="menu">
-				<ul>
-					<li> <a href="index.php"> PÁGINA INICIAL </a> </li>
-          <li> <a href="cadastro.php"> CADASTRAR </a> </li>
-          <li> <a href="login.php"> LOGAR </a> </li>
-				</ul>
-			</div>
+        <ul>
+          <li> <a onclick="location.href='index.php'"> PÁGINA INICIAL </a> </li>
+          <li> <a onclick="location.href='cadastro.php'"> CADASTRAR </a> </li>
+          <li> <a onclick="location.href='timeline.php'"> TIMELINE </a> </li>
+            <li> <a onclick="location.href='logout.php'"> SAIR  </a> </li>
+        </ul><br><br>
+      </div>
 
       <div class="content"><br><br>
               <fieldset>
