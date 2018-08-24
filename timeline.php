@@ -75,7 +75,7 @@ $name = "$auth_name";
             if($username==$row["username"]){
                 $_SESSION['tweets_id'] = $row["id"];
             ?>
-                <button onclick="location.href='deleta.php'">Excluir</button><br>
+                <a onclick="location.href='deleta.php'">Excluir</a><br>
             <?php
             }
             echo "____________________________________________________________";
