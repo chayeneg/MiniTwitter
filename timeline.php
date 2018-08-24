@@ -35,7 +35,7 @@ $name = "$auth_name";
       while($row = mysqli_fetch_assoc($result)){
         echo "<table id='tabela_infos' style='width:100%'>";
         echo "<tr><strong>Nome completo:</strong> " . $row["name"] . "</tr><br>";
-        echo "<tr><strong>Nome de usuário:</strong> " . $row["username"] . "</tr><br>";
+        echo "<tr><strong>Nome de usuário:</strong> @" . $row["username"] . "</tr><br>";
         echo "<tr><strong>Email:</strong> " . $row["email"] . "</tr><br>";
         echo "<tr><strong>Data de nascimento:</strong> " . $row["birthDate"] . "</tr><br>";
         echo "<tr><strong>Sexo:</strong> " . $row["sex"] . "</tr><br>";
@@ -45,22 +45,16 @@ $name = "$auth_name";
       }
     ?>
   </fieldset>
-
-
   			</div>
             <fieldset>
               <div class="content"><br><br>
                 <div class="content-inner">
-                  <h2>Timeline</h2>
+                  <h2> O que você está pensando?</h2>
   <form action="processa-timeline.php" method="post">
-
-      <?php
-      echo $name . "<br>" . "@" . $username . "<br>";
-      ?>
       <br>
-    <textarea class="post" id="new_message" name="new_message" placeholder=" O que você está pensando?" rows="5" cols="40" onkeyup="conta(140)" maxlength="140"></textarea>
+    <textarea class="post" id="new_message" name="new_message" placeholder=" Digite aqui a sua mensagem! " rows="5" cols="40" onkeyup="conta(140)" maxlength="140"></textarea>
     <p id="char_count" name="char_count"> 140 caracteres restantes </p>
-    <input type="submit" id="btn-submit" name="btn-submit" value="Twettar"><br><br>
+    <input type="submit" id="btn-submit" value="Twettar"><br><br>
   </form>
     <h2> Veja o que estão falando </h2>
       <?php
@@ -75,7 +69,7 @@ $name = "$auth_name";
             if($username==$row["username"]){
                 $_SESSION['tweets_id'] = $row["id"];
             ?>
-                <button onclick="location.href='deleta.php'">Excluir</button><br>
+                <button  id="button" click="location.href='deleta.php'">Excluir</button><br>
             <?php
             }
             echo "____________________________________________________________";
