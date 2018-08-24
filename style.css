@@ -172,3 +172,27 @@ select[name="sex"]{
 		margin-right:0;
 	}
 }
+
+#button {
+border-radius: 8px;
+width: 130px;
+height: 40px;
+background: #4472ca;
+font-weight: bold;
+color: white;
+    text-transform: uppercase;
+}
+
+
+input[id="submit"]{
+border-radius: 8px;
+width: 130px;
+height: 40px;
+background: #4472ca;
+font-weight: bold;
+color: white;
+
+    text-transform: uppercase;
+
+
+}
